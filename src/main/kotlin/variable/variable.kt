@@ -1,5 +1,6 @@
 package main.kotlin.variable
 
+import com.sun.jdi.Value
 import kotlin.math.min
 
 fun main(){
@@ -23,4 +24,14 @@ fun main(){
 
     val minMax: Int = 128
     println(minMax)
+
+    val variableClass = VariableClass(
+        "Shoses",
+        2324,
+        100,
+        "Nike",
+        "IntStock"
+    )
+    // calling the method
+    variableClass.showedAllTheInfoOfVariableClass()
 }
