@@ -26,7 +26,7 @@ fun main(){
     println(minMax)
 
     val variableClass = VariableClass(
-        "Shoses",
+        "Shoes",
         2324,
         100,
         "Nike",
