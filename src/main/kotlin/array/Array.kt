@@ -30,6 +30,19 @@ fun main(){
     // Prints the modified element
     println(simpleArray[0].toString()) // 10
     println(twoDArray[0][0].toString()) // 2
+    // create mutableList Array[Dynamic size]
+    // create variable array
+    val names = mutableListOf(
+        "Dara"
+        ,"Nona"
+    )
+    // add the item in to array
+    names.add("Tola")
+
+    // output println
+    println("Display All Info Of Mutable Array")
+    println("All Name In List : $names")
+
 }
 
 class ShowedInformation{
