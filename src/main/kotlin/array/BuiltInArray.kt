@@ -4,6 +4,7 @@ import javax.imageio.ImageReadParam
 
 /*
     How to create builtInArray In Kotlin
+    How tousing array in kotlin programing
  */
 
 fun main(){
@@ -25,8 +26,11 @@ fun main(){
     intArray.plus("Sting")
     println("--------------------------------")
     println(intArray.plus("ArrayInt"))
-    println(stringArray1.plus(29))
+    println("You Can Add The number : ${stringArray1.plus(20).contentToString()}")
     println("Array The result : $intArray")
-}
+    println("===============================")
+
+    val computerBranch: Array<String> = arrayOf("Apple", "Branch")
+ }
 
 
