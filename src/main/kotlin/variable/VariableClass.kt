@@ -17,3 +17,9 @@ class VariableClass(
         println("Stock : $stock")
     }
 }
+
+// main entry point
+fun main(){
+
+}
+
