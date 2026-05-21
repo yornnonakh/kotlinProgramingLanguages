@@ -3,8 +3,8 @@ package main.kotlin.array
 fun main(){
     /*
         There are 2 types of array in kotlin
-        - mutable array can add more element or can edit
-        - immutable array cannot add more elements or cannot edit elements
+        - mutable array (Array that can add or remove element)
+        - immutable array (Array that cannot remove or add element)
      */
     // Creates an array with values [null, null, null]
     val nullArray: Array<Int?> = arrayOfNulls(3)
@@ -14,8 +14,23 @@ fun main(){
     // create object to calling the function
     val showedInformation = ShowedInformation()
     showedInformation.name
+    var mutableArray: MutableList<Person> = mutableListOf<Person>()
+        Person("Yorn", "Nona", 20,"297393")
 
     var riversArray = arrayOf("Nile", "Amazon", "Yangtze")
+    println("Showed ListOfArray $mutableArray")
+    println("Showed The Info: ")
+    mutableArray.add(
+        Person(
+            id = "29284",
+            firstName =  "Yorn",
+            lastName = "Nona",
+            age = 20
+
+        )
+    )
+    println(mutableArray)
+
 
     // Using the += assignment operation creates a new riversArray,
     // copies over the original elements and adds "Mississippi"
@@ -42,6 +57,7 @@ fun main(){
     )
     // add the item in to array
     names.add("Tola")
+    names.remove("Dara")
 
     // output println
     println("Display All Info Of Mutable Array")
@@ -52,3 +68,12 @@ fun main(){
 class ShowedInformation{
     var name: String = "Welcome to kotlin"
 }
+
+    // create data class
+data class Person(
+        // data member or field
+    val firstName: String,
+    val lastName: String,
+    val age: Int,
+    val id: String,
+)
