@@ -1,7 +1,11 @@
 package main.kotlin.array
 
 fun main(){
-
+    /*
+        There are 2 types of array in kotlin
+        - mutable array can add more element or can edit
+        - immutable array cannot add more elements or cannot edit elements
+     */
     // Creates an array with values [null, null, null]
     val nullArray: Array<Int?> = arrayOfNulls(3)
     println(nullArray.joinToString())
