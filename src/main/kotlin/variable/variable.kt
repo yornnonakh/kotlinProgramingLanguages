@@ -1,37 +1,49 @@
 package main.kotlin.variable
 
-import com.sun.jdi.Value
-import kotlin.math.min
+import org.w3c.dom.css.Counter
+
+/*
+    main entry point
+     There are two types of variable in kotlin
+    - val (Immutable)
+    - var (mutable)
+ */
 
 fun main(){
 
-    // create variable using val only value can't change
-    val name: String = "Nona"
-    val age: Int = 20
-    val price: Double = 0.400
-    val gender: Char = 'M'
-    val isStudent: Boolean = true
-    val score: Float = 100.0f
-    // How to display all variable
-    println("=======[Showed All The Value]==========")
-    println("Name $name")
-    println("Age : $age")
-    println("Price :$price")
-    println("Gender : $gender")
-    println("IsStudent : $isStudent")
-    println("Score : $score")
-    println("========================================")
+    // field or properties
+    val accountNumber: String = "56780987" // immutable cannot reassign the value
+    var accountType: String = "Saving" // mutable can reassign the value
+    val computer: String = "MacBook Pro"
+    var price: Double = 1500.00  // var can reassign the value
 
-    val minMax: Int = 128
-    println(minMax)
+    /*
+        Immutable Variable
+     */
+    price = 200.00
+    val stringVariable: String = ""
+    val intVariable: Int = 20
+    val byteVariable: Byte = 12
+    val shortVariable: Short = 132
+    val longVariable = 678934
 
-    val variableClass = VariableClass(
-        "Shoes",
-        2324,
-        100,
-        "Nike",
-        "IntStock"
-    )
-    // calling the method
-    variableClass.showedAllTheInfoOfVariableClass()
+    val student: Int = 30
+    val coursePrice: Double = 10.90
+    val totalIncome = calculator(studentCounter = student, coursePrice = price)
+    println("Total : $totalIncome")
+
+    // call the return function
+
+
+
+//    accountNumber = ""
+//    accountType = "Deposit Money "
+
+    println("Account Types : $accountType")
+}
+
+// create function
+
+fun calculator(studentCounter: Int, coursePrice: Double ): Double{
+    return studentCounter * coursePrice
 }
