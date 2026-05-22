@@ -7,7 +7,6 @@ package main.kotlin.controlFlow
     - Multiply (*)
     - Divide (/)
     - Reminder (%)
-
  */
 
 fun main(){
@@ -19,12 +18,13 @@ fun main(){
     val resultOfMultiply = compareMultiply(myMoney, friendMoney)
     val resultOfDivider = compareDivider(myMoney, friendMoney)
     val resultOfReminder = compareReminder(myMoney,  friendMoney)
+    val resultOfSubtract = compareSubtract(myMoney, friendMoney)
 
     println("Result Of Multiply : $resultOfMultiply")
     println("Result Of Divider : $resultOfDivider")
     println("Result Of Reminder is : $resultOfReminder")
     println("Result Of Plus is : $resultOfPlus")
-
+    println("Result Of Subtract is : $resultOfSubtract")
 
     val resultOfSum = compareAndSum(myMoney = myMoney, friendMoney = friendMoney)
     println("The Result of Sum is : $resultOfSum")
@@ -51,4 +51,7 @@ fun compareDivider(a: Double, b: Double): Double{
 }
 fun compareReminder(x: Double, y: Double): Double{
     return x % y
+}
+fun compareSubtract(x: Double, y: Double): Double{
+    return x - y
 }
