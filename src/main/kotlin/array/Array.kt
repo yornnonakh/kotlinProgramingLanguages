@@ -15,7 +15,7 @@ fun main(){
     val showedInformation = ShowedInformation()
     showedInformation.name
     var mutableArray: MutableList<Person> = mutableListOf<Person>()
-        Person("Yorn", "Nona", 20,"297393")
+        Person("Born", "Nona", 20,"297393")
 
     var riversArray = arrayOf("Nile", "Amazon", "Yangtze")
     println("Showed ListOfArray $mutableArray")
@@ -23,7 +23,7 @@ fun main(){
     mutableArray.add(
         Person(
             id = "29284",
-            firstName =  "Yorn",
+            firstName =  "Born",
             lastName = "Nona",
             age = 20
 
