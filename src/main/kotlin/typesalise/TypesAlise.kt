@@ -18,8 +18,12 @@ fun main(){
 
     // variable of list
     val people: Person = listOf("A", "B", "C")
+    println("The result : $")
 
-    requestApi { status, message, errorCode, errorMessage -> Unit }
+    requestApi{
+
+        status, message, errorCode, errorMessage -> Unit
+    }
     requestApi (
         onResult = { status, message, errorCode, errorMessage ->  Unit
             println(status)
@@ -28,10 +32,10 @@ fun main(){
             println(errorMessage)
         }
     )
-
 }
 fun requestApi(
     onResult: NetWorkResult,
+
 )
 {
     // starting requested to the server
