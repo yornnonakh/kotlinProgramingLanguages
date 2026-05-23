@@ -13,7 +13,7 @@ fun main(){
         40.0000f
     )
     val computer = Computer(
-        "Macbook pro",
+        "MacBook pro",
         "Apple",
         17000,
         "Apple"
