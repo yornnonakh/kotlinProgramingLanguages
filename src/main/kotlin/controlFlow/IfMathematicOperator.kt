@@ -44,6 +44,7 @@ fun main(){
     println("Result Of Reminder is : $resultOfReminder")
     println("Result Of Plus is : $resultOfPlus")
     println("Result Of Subtract is : $resultOfSubtract")
+    println("Result Of Computer Store Product = $resultOfComputerStorethatHaveInStockShowedAllTheProduct")
     println("==============================================================")
 
     val resultOfSum = compareAndSum(myMoney = myMoney, friendMoney = friendMoney)
@@ -91,5 +92,5 @@ fun compareComputerItemBetweenMacbookAndWinDown(macBook: Boolean, window: Boolea
 fun showedAllTheProductComputerThatHaveInStock(dell: String, asus: String
 ): String{
     return if(dell < asus) "The product was have in stock"
-    else "All the "
+    else "All Product In Stock"
 }
