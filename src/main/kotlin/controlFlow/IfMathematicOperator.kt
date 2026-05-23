@@ -13,6 +13,7 @@ fun main(){
 
     val myMoney = 500.00
     val friendMoney = 100.00
+
     val car: String
     val motor: String
     val iphone: Boolean
@@ -21,10 +22,14 @@ fun main(){
     val macBook: Boolean
     val window: Boolean
 
+    val dell = String
+    val asus = String
+
     println(showedPowerOfCarAndMoto(car = true, motor = false))
 
     val resultOfIphoneAndAndroid = showedTheInfoOfIphoneAndAndroidPrice(iphone = false, android = true)
     val resultOfMacBookAndWindow = compareComputerItemBetweenMacbookAndWinDown(macBook = true, window = false)
+    val resultOfComputerStorethatHaveInStockShowedAllTheProduct = showedAllTheProductComputerThatHaveInStock("have In Stock ", "Not In Stock ")
     val resultOfPlus = comparePlus(myMoney, friendMoney)
     val resultOfMultiply = compareMultiply(myMoney, friendMoney)
     val resultOfDivider = compareDivider(myMoney, friendMoney)
@@ -82,4 +87,9 @@ fun showedTheInfoOfIphoneAndAndroidPrice(iphone: Boolean, android: Boolean): Str
 fun compareComputerItemBetweenMacbookAndWinDown(macBook: Boolean, window: Boolean): String{
     return if(macBook > window) "This product is more expensive"
     else "All The Product has Been Sold"
+}
+fun showedAllTheProductComputerThatHaveInStock(dell: String, asus: String
+): String{
+    return if(dell < asus) "The product was have in stock"
+    else "All the "
 }
