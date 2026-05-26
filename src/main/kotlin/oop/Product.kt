@@ -13,7 +13,7 @@ package main.kotlin.oop
          343,
          200.99
      )
-     println("Showed All The products : $showedCase")
+     println("Showed All The products : ${showedCase.showedAllTheProductShowedCase()}")
  }
 
 class Product {
