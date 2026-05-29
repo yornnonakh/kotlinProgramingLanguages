@@ -7,7 +7,7 @@ package main.kotlin.oop
 
      // create objects
      val showedCase = ProductShowedCase(
-         "Shose",
+         "Shoes",
          "Nike",
          345,
          343,
